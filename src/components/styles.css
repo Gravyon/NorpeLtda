@@ -1,0 +1,29 @@
+.nav-border:first-child {
+  border-bottom-left-radius: 16px;
+}
+
+.nav-border:last-child {
+  border-bottom-right-radius: 16px;
+}
+
+.nav-link {
+  position: relative;
+  margin-left: 10px;
+}
+
+.nav-link::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  background-color: #046546;
+  border-radius: 5px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
