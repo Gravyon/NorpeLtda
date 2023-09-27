@@ -4,7 +4,7 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { LuPhone } from "react-icons/lu";
 import { AiOutlineMail } from "react-icons/ai";
 import "./styles.css";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const navigation = [
     { name: "INICIO", href: "/", current: true },
