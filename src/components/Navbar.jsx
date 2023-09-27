@@ -4,6 +4,7 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { LuPhone } from "react-icons/lu";
 import { AiOutlineMail } from "react-icons/ai";
 import "./styles.css";
+import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const navigation = [
     { name: "INICIO", href: "/", current: true },
@@ -59,14 +60,18 @@ const Navbar = () => {
       <img src={logo} className="m-2" />
       <div className="flex justify-end  ">
         {navigation.map((item) => (
-          <p className="nav-item nav-link hover:text-aquamarine hover:underline-offset-4">
-            <a
+          <p className="nav-item hover:text-aquamarine hover:underline-offset-4">
+            <NavLink
               key={item.name}
-              href={item.href}
-              className="text-norpe-green bg-white px-3 py-2 text-sm font-medium"
+              to={item.href}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-norpe-green active-nav-link bg-white px-3 py-2 text-sm font-medium"
+                  : "text-norpe-green nav-link bg-white px-3 py-2 text-sm font-medium"
+              }
             >
               {item.name}
-            </a>
+            </NavLink>
           </p>
         ))}
       </div>
