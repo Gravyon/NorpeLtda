@@ -9,6 +9,7 @@
 .nav-link {
   position: relative;
   margin-left: 10px;
+  text-decoration: none;
 }
 
 .nav-link::after {
@@ -27,3 +28,20 @@
   width: 100%;
 }
 
+.active-nav-link {
+  position: relative;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.active-nav-link::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+  background-color: #046546;
+  border-radius: 5px;
+  position: absolute;
+  transition: 0.5s;
+}
