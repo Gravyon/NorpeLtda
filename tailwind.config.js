@@ -9,8 +9,8 @@ export default {
       colors: {
         'white': '#FFFFFF',
         'norpe-green': '#046546',
-        'norpe-light-green': '#0EAA78',
         'lime': '#37C22B',
+        'aquamarine': "#0EAA78",
         'blue': '#1877F2',
       },
     },

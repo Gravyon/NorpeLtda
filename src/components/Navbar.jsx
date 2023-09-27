@@ -6,11 +6,11 @@ import { AiOutlineMail } from "react-icons/ai";
 import "./styles.css";
 const Navbar = () => {
   const navigation = [
-    { name: "INICIO", href: "#aboutme", current: true },
-    { name: "TIPS PARA EL USUARIO", href: "#projects", current: false },
-    { name: "PAGUE SU FACTURA", href: "#contact", current: false },
-    { name: "QUIENES SOMOS?", href: "#contact", current: false },
-    { name: "CONTACTANOS", href: "#contact", current: false },
+    { name: "INICIO", href: "/", current: true },
+    { name: "TIPS PARA EL USUARIO", href: "/tips", current: false },
+    { name: "PAGUE SU FACTURA", href: "/factura", current: false },
+    { name: "QUIENES SOMOS?", href: "/nosotros", current: false },
+    { name: "CONTACTANOS", href: "/contacto", current: false },
   ];
 
   const contact = [
@@ -44,7 +44,7 @@ const Navbar = () => {
             key={item.name}
             href={item.href}
             target="_blank"
-            className="bg-norpe-green hover:text-blue nav-border text-white px-1 py-2 text-sm font-medium"
+            className="bg-norpe-green hover:text-aquamarine nav-border text-white px-1 py-2 text-sm font-medium"
             aria-current={
               item.current ? "underline hover:underline" : undefined
             }
@@ -59,15 +59,15 @@ const Navbar = () => {
       <img src={logo} className="m-2" />
       <div className="flex justify-end  ">
         {navigation.map((item) => (
-          <a
-            key={item.name}
-            href={item.href}
-            className="text-norpe-green bg-white px-3 py-2 text-sm font-medium"
-          >
-            <p className="nav-item nav-link hover:text-green-500 hover:underline-offset-4">
+          <p className="nav-item nav-link hover:text-aquamarine hover:underline-offset-4">
+            <a
+              key={item.name}
+              href={item.href}
+              className="text-norpe-green bg-white px-3 py-2 text-sm font-medium"
+            >
               {item.name}
-            </p>
-          </a>
+            </a>
+          </p>
         ))}
       </div>
     </nav>
