@@ -8,8 +8,8 @@ export default {
     extend: {
       colors: {
         'white': '#FFFFFF',
-        'green': '#046546',
-        'light-green': '#0EAA78',
+        'norpe-green': '#046546',
+        'norpe-light-green': '#0EAA78',
         'lime': '#37C22B',
         'blue': '#1877F2',
       },
