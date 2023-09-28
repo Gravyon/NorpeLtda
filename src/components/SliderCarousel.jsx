@@ -128,7 +128,7 @@ export function SliderCarousel() {
               className="bg-norpe-green hover:bg-aquamarine rounded-3xl"
               variant="filled"
             >
-              DETECCION DE INCENDIOS
+              SISTEMA DE CCTV
             </Button>
           </div>
         </div>
