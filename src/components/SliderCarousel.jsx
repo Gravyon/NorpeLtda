@@ -5,33 +5,6 @@ import banner3 from "../assets/Banner03.png";
 import banner4 from "../assets/Banner04.png";
 import banner5 from "../assets/Banner05.png";
 export function SliderCarousel() {
-  const banners = [
-    {
-      imageSrc: banner1,
-      altText: "Imagen 1",
-      itemName: "SOLICITAR COTIZACION",
-    },
-    {
-      imageSrc: banner2,
-      altText: "Imagen 2",
-      itemName: "MONITOREO Y RESPUESTA",
-    },
-    {
-      imageSrc: banner3,
-      altText: "Imagen 3",
-      itemName: "ALARMA DE ROBO",
-    },
-    {
-      imageSrc: banner4,
-      altText: "Imagen 4",
-      itemName: "DETECCION DE INCENDIOS",
-    },
-    {
-      imageSrc: banner5,
-      altText: "Imagen 5",
-      itemName: "DETECCION DE INCENDIOS",
-    },
-  ];
   return (
     <Carousel
       loop
