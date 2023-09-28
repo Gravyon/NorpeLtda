@@ -1,7 +1,12 @@
 import React from "react";
+import { SliderCarousel } from "../../components/SliderCarousel";
 
 const Home = () => {
-  return <main>Main</main>;
+  return (
+    <div>
+      <SliderCarousel />
+    </div>
+  );
 };
 
 export default Home;
