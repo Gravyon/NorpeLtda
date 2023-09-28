@@ -10,6 +10,7 @@ export default withMT({
         'lime': '#37C22B',
         'aquamarine': "#0EAA78",
         'blue': '#1877F2',
+        'light-gray': '#EFEFEF'
       },
     },
   },
