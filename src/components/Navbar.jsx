@@ -10,8 +10,8 @@ const Navbar = () => {
     { name: "INICIO", href: "/", current: true },
     { name: "TIPS PARA EL USUARIO", href: "/tips" },
     { name: "PAGUE SU FACTURA", href: "/factura" },
-    { name: "QUIENES SOMOS?", href: "/nosotros" },
-    { name: "CONTACTANOS", href: "/contacto" },
+    { name: "¿QUIENES SOMOS?", href: "/nosotros" },
+    { name: "CONTÁCTANOS", href: "/contacto" },
   ];
 
   const contact = [
