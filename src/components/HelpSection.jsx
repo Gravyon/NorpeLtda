@@ -26,11 +26,11 @@ const HelpSection = () => {
           ¿NECESITAS AYUDA?
         </p>
       </div>
-      <div className="flex flex-row justify-center sm:flex-row sm:justify-between mb-4 sm:mb-8 md:mb-10 lg:mb-10 xl:mb-10 text-norpe-green">
+      <div className="flex sm:flex-col sm:justify-center md:flex-row md:justify-between mb-4 sm:mb-8 md:mb-10 lg:mb-10 xl:mb-10 text-norpe-green">
         {helpInfo.map((item, id) => (
           <div
             key={id}
-            className="mx-4 sm:mx-8 md:mx-10 lg:mx-10 xl:mx-10 mb-4 sm:mb-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 text-center bg-white"
+            className="mx-4 sm:mt-12 md:mt-0 sm:mx-auto md:mx-10 lg:mx-10 xl:mx-10 mb-4 sm:mb-0 w-full sm:w-full md:w-1/3 lg:w-1/4 xl:w-1/4 text-center bg-white"
           >
             <img
               src={item.imageSrc}
