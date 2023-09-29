@@ -85,13 +85,15 @@ export function SliderCarousel() {
         <div className="absolute inset-0 grid h-full w-full place-items-center">
           <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32 lg:pb-32"></div>
           <div className="flex justify-center gap-2">
-            <Button
-              size="lg"
-              className="bg-norpe-green hover:bg-aquamarine rounded-3xl"
-              variant="filled"
-            >
-              MONITOREO Y RESPUESTA
-            </Button>
+            <a href="#monitoreo">
+              <Button
+                size="lg"
+                className="bg-norpe-green hover:bg-aquamarine rounded-3xl"
+                variant="filled"
+              >
+                MONITOREO Y RESPUESTA
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -104,13 +106,15 @@ export function SliderCarousel() {
         <div className="absolute inset-0 grid h-full w-full place-items-center">
           <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32 lg:pb-32"></div>
           <div className="flex justify-center gap-2">
-            <Button
-              size="lg"
-              className="bg-norpe-green hover:bg-aquamarine rounded-3xl"
-              variant="filled"
-            >
-              ALARMA DE ROBO
-            </Button>
+            <a href="#alarmas">
+              <Button
+                size="lg"
+                className="bg-norpe-green hover:bg-aquamarine rounded-3xl"
+                variant="filled"
+              >
+                ALARMA DE ROBO
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -123,13 +127,15 @@ export function SliderCarousel() {
         <div className="absolute inset-0 grid h-full w-full place-items-center">
           <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32 lg:pb-32"></div>
           <div className="flex justify-center gap-2">
-            <Button
-              size="lg"
-              className="bg-norpe-green hover:bg-aquamarine rounded-3xl"
-              variant="filled"
-            >
-              SISTEMA DE CCTV
-            </Button>
+            <a href="#cctv">
+              <Button
+                size="lg"
+                className="bg-norpe-green hover:bg-aquamarine rounded-3xl"
+                variant="filled"
+              >
+                SISTEMA DE CCTV
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -142,13 +148,15 @@ export function SliderCarousel() {
         <div className="absolute inset-0 grid h-full w-full place-items-center">
           <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32 lg:pb-32"></div>
           <div className="flex justify-center gap-2">
-            <Button
-              size="lg"
-              className="bg-norpe-green hover:bg-aquamarine rounded-3xl"
-              variant="filled"
-            >
-              DETECCION DE INCENDIOS
-            </Button>
+            <a href="#deteccion">
+              <Button
+                size="lg"
+                className="bg-norpe-green hover:bg-aquamarine rounded-3xl"
+                variant="filled"
+              >
+                DETECCION DE INCENDIOS
+              </Button>
+            </a>
           </div>
         </div>
       </div>
