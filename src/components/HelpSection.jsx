@@ -12,7 +12,7 @@ const HelpSection = () => {
 
     {
       title: "ENVIANOS UN EMAIL",
-      text: "Escríbenos por correo electrónico haciendo clic aquí",
+      text: `Escríbenos por correo electrónico haciendo clic aquí`,
 
       imageSrc: correo,
     },
@@ -20,30 +20,42 @@ const HelpSection = () => {
   ];
 
   return (
-    <div className="grid place-items-center m-24 mx-44 bg-norpe-green rounded-xl">
+    <div className="grid place-items-center m-4 sm:m-8 md:m-12 lg:m-24 xl:m-32 bg-norpe-green rounded-xl">
       <div className="text-white">
-        <p className="text-3xl m-10">¿NECESITAS AYUDA?</p>
+        <p className="text-3xl m-4 sm:m-6 md:m-8 lg:m-10 xl:m-10">
+          ¿NECESITAS AYUDA?
+        </p>
       </div>
-      <div className="flex justify-between mb-10 text-norpe-green">
-        <div className="mx-10 w-64 text-center bg-white">
-          <img src={visita} className="mx-auto m-2 mt-2" />
-          <p className="text-lg">VISITANOS EN NUESTRA OFICINA</p>
-          <p>18 de Julio 509</p>
-          <p>Colonia del Sacramento</p>
-          <p>URUGUAY</p>
-        </div>
-        <div className="mx-10 w-64 text-center bg-white">
-          <img src={correo} className="mx-auto m-2 mt-2" />
-          <p className="text-lg">ENVIANOS UN EMAIL</p>
-          <p>Escríbenos por correo </p>
-          <p>electrónico haciendo</p>
-          <p>clic aquí</p>
-        </div>
-        <div className="mx-10 w-64 text-center bg-white">
-          <img src={llamanos} className="mx-auto m-2 mt-2" />
-          <p className="text-lg">LLÁMANOS</p>
-          <p>+598 4522 4413</p>
-        </div>
+      <div className="flex flex-row justify-center sm:flex-row sm:justify-between mb-4 sm:mb-8 md:mb-10 lg:mb-10 xl:mb-10 text-norpe-green">
+        {helpInfo.map((item, id) => (
+          <div
+            key={id}
+            className="mx-4 sm:mx-8 md:mx-10 lg:mx-10 xl:mx-10 mb-4 sm:mb-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 text-center bg-white"
+          >
+            <img
+              src={item.imageSrc}
+              className="mx-auto mb-2 m-2 mt-2"
+              alt={item.title}
+            />
+            <p className="text-sm">{item.title}</p>
+            {item.text ===
+            "Escríbenos por correo electrónico haciendo clic aquí" ? (
+              <p className="my-4 mx-1">
+                Escríbenos por correo electrónico haciendo{" "}
+                <a
+                  className="hover:text-aquamarine"
+                  href="mailto:info@seguridadnorpe.com.uy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  clic aquí
+                </a>
+              </p>
+            ) : (
+              <p className="my-4 mx-1">{item.text}</p>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );
