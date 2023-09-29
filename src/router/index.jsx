@@ -14,50 +14,22 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-    ],
-  },
-  {
-    path: "/tips",
-    element: <Default />,
-    children: [
       {
-        path: "",
+        path: "/tips",
         element: <Tips />,
       },
-    ],
-  },
-  {
-    path: "/factura",
-    element: <Default />,
-    children: [
       {
-        path: "",
+        path: "/factura",
         element: <Payment />,
       },
-    ],
-  },
-  {
-    path: "/nosotros",
-    element: <Default />,
-    children: [
       {
-        path: "",
+        path: "/nosotros",
         element: <AboutUs />,
       },
-    ],
-  },
-  {
-    path: "/contacto",
-    element: <Default />,
-    children: [
       {
-        path: "",
+        path: "/contacto",
         element: <Contact />,
       },
     ],
   },
-  //   {
-  //     path: "*",
-  //     element: <NotFoundView />,
-  //   },
 ]);
