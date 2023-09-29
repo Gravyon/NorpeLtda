@@ -5,12 +5,13 @@ import deteccion from "../assets/03Deteccion_de_Incendios.png";
 import cctv from "../assets/04SistemasCCTV.png";
 import servicios from "../assets/servicios.png";
 import { Button } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Servicios = () => {
   return (
     <div className="flex flex-col">
       <img src={servicios} />
-      <div className="flex flex-col md:flex-row">
+      <div id="monitoreo" className="flex flex-col md:flex-row">
         <img className="h-80 md:w-1/2" src={monitoreo} />
         <div className="text-center h-80 w-full sm:w-full md:w-1/2 bg-light-gray">
           <div className="text-2xl mt-10 font-medium text-norpe-green">
@@ -21,17 +22,23 @@ const Servicios = () => {
             con toda la actividad del sistema. Ante eventos de emergencia, uno
             de nuestros móviles concurrirá al lugar.
           </div>
-          <Button
-            size="lg"
-            className="bg-norpe-green mb-5 hover:bg-aquamarine rounded-3xl"
-            variant="filled"
-          >
-            SOLICITAR MÁS DETALLES
-          </Button>
+          <Link to="/contacto">
+            {" "}
+            <Button
+              size="lg"
+              className="bg-norpe-green mb-5 hover:bg-aquamarine rounded-3xl"
+              variant="filled"
+            >
+              SOLICITAR MÁS DETALLES
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="flex flex-col md:flex-row">
-        <div className="text-center h-80 w-full sm:w-full md:w-1/2 bg-light-gray">
+        <div
+          id="alarmas"
+          className="text-center h-80 w-full sm:w-full md:w-1/2 bg-light-gray"
+        >
           <div className="text-2xl mt-10 font-medium text-norpe-green">
             <strong>ALARMAS DE ROBO</strong>
           </div>
@@ -39,19 +46,24 @@ const Servicios = () => {
             El sistema dará aviso ante cualquier incidente o posible intrusión
             de su casa o negocio.
           </div>
-          <Button
-            size="lg"
-            className="bg-norpe-green mt-5 hover:bg-aquamarine rounded-3xl"
-            variant="filled"
-          >
-            SOLICITAR MÁS DETALLES
-          </Button>
+          <Link to="/contacto">
+            <Button
+              size="lg"
+              className="bg-norpe-green mt-5 hover:bg-aquamarine rounded-3xl"
+              variant="filled"
+            >
+              SOLICITAR MÁS DETALLES
+            </Button>
+          </Link>
         </div>
         <img className="h-80 md:w-1/2" src={alarmas} />
       </div>
       <div className="flex flex-col md:flex-row">
         <img className="h-80 md:w-1/2" src={deteccion} />
-        <div className="text-center h-80 w-full sm:w-full md:w-1/2 bg-light-gray">
+        <div
+          id="deteccion"
+          className="text-center h-80 w-full sm:w-full md:w-1/2 bg-light-gray"
+        >
           <div className="text-2xl mt-10 font-medium text-norpe-green">
             <strong>DETECCIÓN DE INCENDIOS</strong>
           </div>
@@ -60,17 +72,22 @@ const Servicios = () => {
             inherentes al fuego. Todas las instalaciones se realizan acorde a la
             normativa vigente y con elementos homologados por la DNB.
           </p>
-          <Button
-            size="lg"
-            className="bg-norpe-green mb-5 hover:bg-aquamarine rounded-3xl"
-            variant="filled"
-          >
-            SOLICITAR MÁS DETALLES
-          </Button>
+          <Link to="/contacto">
+            <Button
+              size="lg"
+              className="bg-norpe-green mb-5 hover:bg-aquamarine rounded-3xl"
+              variant="filled"
+            >
+              SOLICITAR MÁS DETALLES
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="flex flex-col md:flex-row">
-        <div className="text-center h-80 w-full sm:w-full md:w-1/2 bg-light-gray">
+        <div
+          id="cctv"
+          className="text-center h-80 w-full sm:w-full md:w-1/2 bg-light-gray"
+        >
           <div className="text-2xl mt-10 font-medium text-norpe-green">
             <strong>SISTEMAS DE CCTV</strong>
           </div>
@@ -78,13 +95,15 @@ const Servicios = () => {
             Proporciona vigilancia continúa y grabación de cámaras de seguridad
             implementando las últimas tecnologías en la materia.
           </div>
-          <Button
-            size="lg"
-            className="bg-norpe-green mb-5 hover:bg-aquamarine rounded-3xl"
-            variant="filled"
-          >
-            SOLICITAR MÁS DETALLES
-          </Button>
+          <Link to="/contacto">
+            <Button
+              size="lg"
+              className="bg-norpe-green mb-5 hover:bg-aquamarine rounded-3xl"
+              variant="filled"
+            >
+              SOLICITAR MÁS DETALLES
+            </Button>
+          </Link>
         </div>
         <img className="h-80 md:w-1/2" src={cctv} />
       </div>

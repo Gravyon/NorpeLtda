@@ -8,10 +8,10 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const navigation = [
     { name: "INICIO", href: "/", current: true },
-    { name: "TIPS PARA EL USUARIO", href: "/tips", current: false },
-    { name: "PAGUE SU FACTURA", href: "/factura", current: false },
-    { name: "QUIENES SOMOS?", href: "/nosotros", current: false },
-    { name: "CONTACTANOS", href: "/contacto", current: false },
+    { name: "TIPS PARA EL USUARIO", href: "/tips" },
+    { name: "PAGUE SU FACTURA", href: "/factura" },
+    { name: "QUIENES SOMOS?", href: "/nosotros" },
+    { name: "CONTACTANOS", href: "/contacto" },
   ];
 
   const contact = [
