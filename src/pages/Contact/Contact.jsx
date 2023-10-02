@@ -4,6 +4,7 @@ import { whiteForm } from "../../validations/contactSchema";
 import { whiteFields } from "../../helpers/formValues";
 import texto_contacto from "../../assets/texto_contacto.png";
 import contactanos from "../../assets/contactanos.png";
+import ContactLocation from "./ContactLocation";
 const Contact = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const Contact = () => {
         validation={whiteForm}
         title="ENVIANOS UN MENSAJE"
       />
+      <ContactLocation />
     </div>
   );
 };
