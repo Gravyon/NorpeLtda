@@ -26,23 +26,25 @@ const ContactForm = ({ color, fields, title, validation }) => {
         color === "green" ? "bg-norpe-green" : "bg-gray-100"
       } `}
     >
-      <p
-        className={`flex justify-center text-3xl font-bold  ${
-          color === "green" ? "text-white" : "text-norpe-green pb-10"
-        }`}
-      >
-        {title}
-      </p>
-      {color === "green" ? (
+      <div className="grid place-items-center">
         <p
-          className={`flex text-lime justify-center text-2xl pb-10 font-bold
-          `}
+          className={`text-3xl font-bold  ${
+            color === "green" ? "text-white" : "text-norpe-green pb-10"
+          }`}
         >
-          Alarmas de robo
+          {title}
         </p>
-      ) : (
-        ""
-      )}
+        {color === "green" ? (
+          <p
+            className={`text-lime text-end text-2xl pb-10 font-bold
+          `}
+          >
+            Alarmas de robo
+          </p>
+        ) : (
+          ""
+        )}
+      </div>
       <Formik
         initialValues={{}}
         validationSchema={validation}
