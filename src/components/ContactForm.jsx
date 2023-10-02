@@ -7,7 +7,7 @@ import { useState } from "react";
 const ContactForm = ({ color, fields, title, validation }) => {
   const [submitting, setSubmitting] = useState(false);
   const [state, handleSubmit] = useForm(import.meta.env.VITE_CONTACT);
-  const onSubmit = async (values, { resetForm }) => {
+  const onSubmit = async (values, reset) => {
     setSubmitting(true);
     try {
       await handleSubmit(values);
@@ -15,7 +15,7 @@ const ContactForm = ({ color, fields, title, validation }) => {
     } catch (error) {
       toast.error("Error en el envío");
     } finally {
-      resetForm();
+      reset.resetForm({ fields });
       setSubmitting(false);
     }
   };
@@ -39,7 +39,7 @@ const ContactForm = ({ color, fields, title, validation }) => {
         onSubmit={onSubmit}
       >
         <Form>
-          <div className="grid grid-rows-2 mx-24">
+          <div className="grid grid-rows-2 md:mx-24">
             {fields.map((field) => (
               <div key={field.name} className="mb-4">
                 <label
