@@ -22,13 +22,13 @@ const HelpSection = () => {
 
   return (
     <section>
-      <div className="grid place-items-center m-4 sm:m-8 md:m-12 lg:m-24 xl:m-32 bg-norpe-green rounded-xl">
+      <div className="grid grid-rows place-items-center md:m-12 lg:m-24 xl:m-32 bg-norpe-green rounded-xl">
         <div className="text-white">
           <p className="text-3xl m-4 sm:m-6 md:m-8 lg:m-10 xl:m-10">
             ¿NECESITAS AYUDA?
           </p>
         </div>
-        <div className="flex sm:flex-col sm:justify-center md:flex-row md:justify-between mb-4 sm:mb-8 md:mb-10 lg:mb-10 xl:mb-10 text-norpe-green">
+        <div className="flex flex-col sm:justify-center md:flex-row md:justify-between mb-4 sm:mb-8 md:mb-10 lg:mb-10 xl:mb-10 text-norpe-green">
           {helpInfo.map((item, id) => (
             <div
               key={id}
@@ -42,7 +42,7 @@ const HelpSection = () => {
               <p className="text-sm">{item.title}</p>
               {item.text ===
               "Escríbenos por correo electrónico haciendo clic aquí" ? (
-                <p className="my-4 mx-1">
+                <p className="my-4 mx-4">
                   Escríbenos por correo electrónico haciendo{" "}
                   <a
                     className="hover:text-aquamarine"
