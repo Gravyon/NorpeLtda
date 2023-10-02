@@ -19,14 +19,13 @@ const ContactForm = ({ color, fields, title, validation }) => {
         {title}
       </p>
       <Formik
-        // initialValues={{}}
+        initialValues={{}}
         validationSchema={validation}
         onSubmit={handleSubmit}
       >
-        {({ isSubmitting }) => (
+        {({ isSubmitting, resetForm }) => (
           <Form>
             <div className="grid grid-rows-3">
-              {" "}
               {fields.map((field) => (
                 <div key={field.name} className="mb-4">
                   <label
@@ -61,16 +60,29 @@ const ContactForm = ({ color, fields, title, validation }) => {
                 </div>
               ))}
             </div>
-
-            <Button
-              size="lg"
-              type="submit"
-              className={`bg-norpe-green ${
-                color === "green" ? "outline outline-1 outline-white" : ""
-              } text-white px-4 py-2 rounded-3xl hover:bg-aquamarine`}
-            >
-              Enviar
-            </Button>
+            {!isSubmitting ? (
+              <Button
+                disabled
+                size="lg"
+                type="submit"
+                className={`bg-norpe-green ${
+                  color === "green" ? "outline outline-1 outline-white" : ""
+                } text-white px-4 py-2 rounded-3xl hover:bg-aquamarine`}
+              >
+                Enviar
+              </Button>
+            ) : (
+              <Button
+                size="lg"
+                type="submit"
+                className={`bg-norpe-green ${
+                  color === "green" ? "outline outline-1 outline-white" : ""
+                } text-white px-4 py-2 rounded-3xl hover:bg-aquamarine`}
+              >
+                Enviar
+              </Button>
+            )}
+            {state.succeeded ? <div>gracias</div> : ""}
           </Form>
         )}
       </Formik>
