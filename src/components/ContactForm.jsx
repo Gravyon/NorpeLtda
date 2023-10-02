@@ -27,12 +27,22 @@ const ContactForm = ({ color, fields, title, validation }) => {
       } `}
     >
       <p
-        className={`flex justify-center text-3xl pb-10 font-bold  ${
-          color === "green" ? "text-white" : "text-norpe-green"
+        className={`flex justify-center text-3xl font-bold  ${
+          color === "green" ? "text-white" : "text-norpe-green pb-10"
         }`}
       >
         {title}
       </p>
+      {color === "green" ? (
+        <p
+          className={`flex text-lime justify-center text-2xl pb-10 font-bold
+          `}
+        >
+          Alarmas de robo
+        </p>
+      ) : (
+        ""
+      )}
       <Formik
         initialValues={{}}
         validationSchema={validation}
@@ -44,9 +54,7 @@ const ContactForm = ({ color, fields, title, validation }) => {
               <div key={field.name} className="mb-4">
                 <label
                   htmlFor={field.name}
-                  className={`${
-                    color === "green" ? "text-white" : "text-norpe-green"
-                  }`}
+                  className={`${color === "green" ? "text-white" : ""}`}
                 >
                   {field.label}
                 </label>
