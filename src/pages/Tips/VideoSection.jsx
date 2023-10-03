@@ -6,7 +6,9 @@ const VideoSection = () => {
   return (
     <div>
       <HeaderVideo />
-      <VideoArray />
+      <div className="bg-gray-200">
+        <VideoArray />
+      </div>
     </div>
   );
 };

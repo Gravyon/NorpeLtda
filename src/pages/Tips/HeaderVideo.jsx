@@ -4,8 +4,7 @@ const HeaderVideo = () => {
   return (
     <div className="m-12 px-10">
       <iframe
-        className="flex justify-center w-full aspect-video"
-        height="500"
+        className="flex justify-center  md:h-screen w-full aspect-video"
         src="https://www.youtube.com/embed/SYxN134gb-8?si=0MCuxI89-_Dp01KT"
         title="YouTube video player"
         frameborder="0"
