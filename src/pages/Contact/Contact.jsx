@@ -8,7 +8,7 @@ import ContactLocation from "./ContactLocation";
 const Contact = () => {
   return (
     <div>
-      <img src={contactanos} alt="" />
+      <img src={contactanos} alt="contactanos" />
       <img src={texto_contacto} alt="texto contacto" />
       <ContactForm
         color="white"
