@@ -13,7 +13,7 @@ const VideoArray = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <div className="m-10 flex flex-col">
+          <div className="mx-10 my-3 flex flex-col">
             <p className="pt-2 text-xl font-bold">{item.title.toUpperCase()}</p>
             <p className="mt-5 text-justify">{item.description}</p>
           </div>
