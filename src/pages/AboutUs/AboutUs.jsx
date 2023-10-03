@@ -1,19 +1,20 @@
 import React from "react";
+import quienes from "../../assets/BannerQuienesSomos.png" // Banner 
 import conoce from "../../assets/conoce.png"
 
 export const AboutUs = () => {
   return (
     <>
-      <div className="flex flex-col">
-        Imagen ausente
-      </div>
-
       <div className="grid place-items-center">
-        <img src={conoce} />
+        <img src={quienes} alt="Quienes somos?"/>
+        <img src={conoce} alt ="Conoce mas acerca de nosotros"/>
       </div>
       
-      <div style={{backgroundColor: "#EFEFEF"}}>
-        <div className="grid place-items-left m-4 sm:m-8 md:m-12 lg:m-24 xl:m-32">
+      <div className="md:flex" //Pegado
+      style={{backgroundColor: "#EFEFEF"}}>
+
+        {/*  xl:m-32 */}
+        <div className="grid place-items-left m-4 sm:m-8 md:m-12 lg:m-24">
           <p className="text-justify"><b>Seguridad Norpe</b> nace como una empresa familiar el 1º de julio de 1996, dedicada a brindar vigilancia y seguridad física en el Departamento de Colonia. El devenir del tiempo y la imposición de los avances tecnológicos nos transformó en la pionera en sistemas electrónicos de seguridad en el Departamento de Colonia (Uruguay).</p>
           <br />
 
