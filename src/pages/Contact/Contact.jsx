@@ -7,9 +7,12 @@ import contactanos from "../../assets/contactanos.png";
 import ContactLocation from "./ContactLocation";
 const Contact = () => {
   return (
-    <div>
+    <>
+    <div className="grid place-items-center">
       <img src={contactanos} alt="contactanos" />
       <img src={texto_contacto} alt="texto contacto" />
+    </div>
+    
       <ContactForm
         color="white"
         fields={whiteFields}
@@ -17,7 +20,7 @@ const Contact = () => {
         title="ENVIANOS UN MENSAJE"
       />
       <ContactLocation />
-    </div>
+      </>
   );
 };
 

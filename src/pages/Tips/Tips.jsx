@@ -5,7 +5,7 @@ import VideoSection from "./VideoSection";
 
 export const Tips = () => {
   return (
-    <div>
+    <div className="grid place-items-center">
       <img src={tips_banner} alt="Banner de tips" />
       <img src={texto_tips} alt="Texto tips" />
       <VideoSection />
