@@ -21,8 +21,8 @@ const ContactForm = ({ color, fields, title, validation }) => {
   }, []);
 
   const onSubmit = async (values, reset) => {
-    setSubmitting(true);
     try {
+      setSubmitting(true);
       await handleSubmit(values);
       toast.success("Envío correcto");
     } catch (error) {
