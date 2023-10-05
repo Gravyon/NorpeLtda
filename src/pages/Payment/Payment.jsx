@@ -5,7 +5,7 @@ import PaymentChoice from "./PaymentChoice";
 
 export const Payment = () => {
   return (
-    <div>
+    <div className="bg-light-gray">
       <img src={payment} alt="Banner de pago" />
       <img src={texto_pago} alt="texto contacto" />
       <PaymentChoice />
