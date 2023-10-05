@@ -1,6 +1,6 @@
 import React from "react";
 import payment2 from "../../assets/payment2.png";
-import { banks } from "../../helpers/banks";
+import { banks } from "../../data/banks";
 
 const PaymentChoice = () => {
   return (

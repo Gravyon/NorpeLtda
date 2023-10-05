@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "../../components/ContactForm";
 import { whiteForm } from "../../validations/contactSchema";
-import { whiteFields } from "../../helpers/formValues";
+import { whiteFields } from "../../data/formValues";
 import texto_contacto from "../../assets/texto_contacto.png";
 import contactanos from "../../assets/contactanos.png";
 import ContactLocation from "./ContactLocation";
