@@ -12,12 +12,15 @@ const Services = () => {
         <div
           key={section.id}
           // Revierte el orden del contenido
-          className={`flex flex-col md:flex-row ${
-            index % 2 !== 0 ? "md:flex-row-reverse" : ""
+          className={`flex flex-col ${
+            index % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
           }`}
         >
-          <img className="h-96 aspect-video" src={section.imageSrc} />
-          <div className="flex-grow text-center w-full sm:w-full md:w-1/2">
+          <img
+            className="h-auto md:w-1/2 aspect-video"
+            src={section.imageSrc}
+          />
+          <div className=" text-center w-full sm:w-full md:w-1/2">
             <div className="flex flex-col h-full">
               <div className="text-2xl mt-10 font-medium text-norpe-green">
                 <strong>{section.title}</strong>
