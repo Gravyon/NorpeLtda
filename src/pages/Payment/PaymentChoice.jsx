@@ -17,7 +17,7 @@ const PaymentChoice = () => {
             SELECCIONE SU BANCO:{" "}
           </p>
           {banks.map((item) => (
-            <button className="p-2 md:px-8 md:p-4">
+            <button className="m-2 md:mx-8 md:m-4">
               <img src={item.image} alt={item.name} />
             </button>
           ))}
