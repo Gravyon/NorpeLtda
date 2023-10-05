@@ -1,25 +1,7 @@
 import React from "react";
-import visita from "../assets/visita.png";
-import llamanos from "../assets/llamanos.png";
-import correo from "../assets/correo.png";
 import whatsapp from "../assets/whatsapp.png";
+import { helpInfo } from "../helpers/helpInfo";
 const HelpSection = () => {
-  const helpInfo = [
-    {
-      title: "VISITANOS EN NUESTRA OFICINA",
-      text: "18 de Julio 509 Colonia del Sacramento URUGUAY",
-      imageSrc: visita,
-    },
-
-    {
-      title: "ENVIANOS UN EMAIL",
-      text: `Escríbenos por correo electrónico haciendo clic aquí`,
-
-      imageSrc: correo,
-    },
-    { title: "LLÁMANOS", text: "+598 4522 4413", imageSrc: llamanos },
-  ];
-
   return (
     <section>
       <div className="grid grid-rows place-items-center md:m-12 lg:m-24 xl:m-32 bg-norpe-green rounded-xl">
