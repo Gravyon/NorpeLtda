@@ -35,7 +35,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="mx-24">
+    <nav className="mx-24 bg-logo bg-no-repeat bg-left-bottom">
       <div className="flex justify-end text-gray-300 text-xl">
         {contact.map((item) => (
           <a
@@ -51,8 +51,8 @@ const Navbar = () => {
           </a>
         ))}
       </div>
-      <img src={logo} className="m-2" />
-      <div className="flex justify-end  ">
+      {/* <img src={logo} /> */}
+      <div className="flex justify-end mt-5">
         {navigation.map((item) => (
           <p className="nav-item hover:text-aquamarine hover:underline-offset-4">
             <NavLink

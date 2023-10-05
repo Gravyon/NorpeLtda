@@ -4,6 +4,9 @@ export default withMT({
   content: ["./index.html", "./src/**/*.jsx"],
   theme: {
     extend: {
+      backgroundImage: {
+        'logo': "url('./assets/Logo_Head.png')",
+      },
       colors: {
         'white': '#FFFFFF',
         'norpe-green': '#046546',
