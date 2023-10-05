@@ -7,7 +7,7 @@ import servicios from "../assets/servicios.png";
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
-const Servicios = () => {
+const Services = () => {
   return (
     <div className="flex flex-col">
       <img src={servicios} />
@@ -111,4 +111,4 @@ const Servicios = () => {
   );
 };
 
-export default Servicios;
+export default Services;
