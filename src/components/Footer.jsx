@@ -8,7 +8,7 @@ import Iframe from "react-iframe";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="bg-light-gray">
       <div className="grid place-content-center md:grid md:grid-cols-3 xl:flex xl:flex-row xl:justify-between xl:mx-5 text-norpe-green xl:text-left text-center">
         <div className="text-center">
           <img src={logo} className="m-2 mt-2" />
