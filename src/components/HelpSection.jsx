@@ -2,6 +2,7 @@ import React from "react";
 import whatsapp from "../assets/whatsapp.png";
 import { helpInfo } from "../data/helpInfo";
 const HelpSection = () => {
+  const helpText = "Escríbenos por correo electrónico haciendo clic aquí";
   return (
     <section>
       <div className="grid grid-rows place-items-center md:m-12 lg:m-24 xl:m-32 bg-norpe-green rounded-xl">
@@ -22,8 +23,7 @@ const HelpSection = () => {
                 alt={item.title}
               />
               <p className="text-sm">{item.title}</p>
-              {item.text ===
-              "Escríbenos por correo electrónico haciendo clic aquí" ? (
+              {item.text === helpText ? (
                 <p className="my-4 mx-4">
                   Escríbenos por correo electrónico haciendo{" "}
                   <a
