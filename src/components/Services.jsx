@@ -2,7 +2,7 @@ import React from "react";
 import servicios from "../assets/servicios.png";
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
-import { sections } from "../helpers/services";
+import { sections } from "../data/services";
 
 const Services = () => {
   return (

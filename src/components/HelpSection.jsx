@@ -1,6 +1,6 @@
 import React from "react";
 import whatsapp from "../assets/whatsapp.png";
-import { helpInfo } from "../helpers/helpInfo";
+import { helpInfo } from "../data/helpInfo";
 const HelpSection = () => {
   return (
     <section>

@@ -1,5 +1,5 @@
 import React from "react";
-import { videos } from "../../helpers/videos";
+import { videos } from "../../data/videos";
 const VideoArray = () => {
   return (
     <div className="p-12 px-10">
