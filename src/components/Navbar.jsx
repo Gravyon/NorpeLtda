@@ -7,7 +7,7 @@ import "./styles.css";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const navigation = [
-    { name: "INICIO", href: "/", current: true },
+    { name: "INICIO", href: "/" },
     { name: "TIPS PARA EL USUARIO", href: "/tips" },
     { name: "PAGUE SU FACTURA", href: "/factura" },
     { name: "¿QUIENES SOMOS?", href: "/nosotros" },
@@ -20,25 +20,22 @@ const Navbar = () => {
       icon: <BiLogoFacebook />,
       value: "",
       href: "www.facebook.com/norpe",
-      current: false,
     },
     {
       name: "telephone",
       icon: <LuPhone />,
       value: "+59845224413",
       href: "tel:+59845224413",
-      current: false,
     },
     {
       name: "mail",
       icon: <AiOutlineMail />,
       value: "info@seguridadnorpe.com.uy",
       href: "mailto:info@seguridadnorpe.com.uy",
-      current: false,
     },
   ];
   return (
-    <nav className="mx-24">
+    <nav className="mx-24 bg-logo bg-no-repeat bg-left-bottom">
       <div className="flex justify-end text-gray-300 text-xl">
         {contact.map((item) => (
           <a
@@ -46,9 +43,6 @@ const Navbar = () => {
             href={item.href}
             target="_blank"
             className="bg-norpe-green hover:text-aquamarine nav-border text-white px-1 py-2 text-sm font-medium"
-            aria-current={
-              item.current ? "underline hover:underline" : undefined
-            }
           >
             <div className="flex nav-item p-2">
               <p className="text-xl mr-1">{item.icon}</p>
@@ -57,10 +51,10 @@ const Navbar = () => {
           </a>
         ))}
       </div>
-      <img src={logo} className="m-2" />
-      <div className="flex justify-end  ">
+      {/* <img src={logo} /> */}
+      <div className="flex justify-end mt-5">
         {navigation.map((item) => (
-          <p className="nav-item hover:text-aquamarine hover:underline-offset-4">
+          <p className="nav-item hover:text-aquamarine hover:underline-offset-4 bg-white">
             <NavLink
               key={item.name}
               to={item.href}

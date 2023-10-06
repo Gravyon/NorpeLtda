@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "@formspree/react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Button } from "@material-tailwind/react";
 import { toast } from "sonner";
-import { useState } from "react";
 const ContactForm = ({ color, fields, title, validation }) => {
   const [submitting, setSubmitting] = useState(false);
   const [state, handleSubmit] = useForm(import.meta.env.VITE_CONTACT);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const services = [
+    "Alarmas de robo",
+    "Deteccion de incendios",
+    "Sistemas de CCTV",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
   const onSubmit = async (values, reset) => {
-    setSubmitting(true);
     try {
+      setSubmitting(true);
       await handleSubmit(values);
       toast.success("Envío correcto");
     } catch (error) {
@@ -35,15 +48,19 @@ const ContactForm = ({ color, fields, title, validation }) => {
           {title}
         </p>
         {color === "green" ? (
-          <p
-            className={`text-lime text-end text-2xl pb-10 font-bold
-          `}
-          >
-            Alarmas de robo
-          </p>
-        ) : (
-          ""
-        )}
+          <div className="flex">
+            {services.map((service, index) => (
+              <p
+                // key={index}
+                className={`text-lime absolute text-xl font-bold ${
+                  index === currentIndex ? "opacity-100" : "opacity-0"
+                } transition-opacity duration-500`}
+              >
+                {service}
+              </p>
+            ))}
+          </div>
+        ) : null}
       </div>
       <Formik
         initialValues={{}}
@@ -51,7 +68,7 @@ const ContactForm = ({ color, fields, title, validation }) => {
         onSubmit={onSubmit}
       >
         <Form>
-          <div className="grid grid-rows-2 md:mx-24">
+          <div className="grid grid-rows-2 md:mx-24 m-10">
             {fields.map((field) => (
               <div key={field.name} className="mb-4">
                 <label

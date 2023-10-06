@@ -8,11 +8,11 @@ import Iframe from "react-iframe";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="bg-light-gray">
       <div className="grid place-content-center md:grid md:grid-cols-3 xl:flex xl:flex-row xl:justify-between xl:mx-5 text-norpe-green xl:text-left text-center">
         <div className="text-center">
           <img src={logo} className="m-2 mt-2" />
-          <p>Horario de atención: </p>
+          <p className="mt-5">Horario de atención: </p>
           <p>Lunes a Viernes 8:30 a 12:00 y de 14:00 a 18:30</p>
           <p>Sábados: 8:30 a 12:30</p>
           <div className="flex justify-center ml-6 mt-10">
