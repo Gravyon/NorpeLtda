@@ -5,8 +5,8 @@ import { Button } from "@material-tailwind/react";
 const NotFound = () => {
   return (
     <div className="grid place-items-center">
-      <img src={error_404} className="w-1/2" alt="No encontrado" />
-      <p className="text-2xl">Página no encontrada</p>
+      <img src={error_404} className="md:w-1/2" alt="No encontrado" />
+      <p className="text-3xl">Página no encontrada</p>
       <Link to="/">
         <Button
           size="lg"
