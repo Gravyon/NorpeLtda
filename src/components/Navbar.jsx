@@ -54,7 +54,7 @@ const Navbar = () => {
       {/* <img src={logo} /> */}
       <div className="flex justify-end mt-5">
         {navigation.map((item) => (
-          <p className="nav-item hover:text-aquamarine hover:underline-offset-4">
+          <p className="nav-item hover:text-aquamarine hover:underline-offset-4 bg-white">
             <NavLink
               key={item.name}
               to={item.href}
