@@ -7,7 +7,7 @@ const Default = () => {
   return (
     <div>
       <Navbar />
-      <div className="my-8">
+      <div className="my-2">
         <Outlet />
       </div>
       <HelpSection />

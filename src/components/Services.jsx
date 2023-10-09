@@ -12,12 +12,12 @@ const Services = () => {
         <div
           key={section.id}
           // Revierte el orden del contenido
-          className={`flex flex-col ${
+          className={`flex flex-col overflow-hidden ${
             index % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
           }`}
         >
           <img
-            className="h-auto md:w-1/2 aspect-video"
+            className="h-auto md:w-1/2 aspect-video overflow-hidden object-cover hover:scale-110 transition-all duration-500"
             src={section.imageSrc}
           />
           <div className=" text-center w-full sm:w-full md:w-1/2">
