@@ -2,7 +2,7 @@ import React from "react";
 
 const HeaderVideo = () => {
   return (
-    <div className="m-12 px-10">
+    <div className="py-12 px-16 bg-gray-200">
       <iframe
         className="flex justify-center  md:h-screen w-full aspect-video"
         src="https://www.youtube.com/embed/SYxN134gb-8?si=0MCuxI89-_Dp01KT"

@@ -4,7 +4,7 @@ const VideoArray = () => {
   return (
     <div className="p-12 px-10">
       {videos.map((item) => (
-        <div className="flex flex-col md:grid md:grid-cols-2 bg-white my-10">
+        <div className="flex flex-col md:grid md:grid-cols-2 bg-gray-200 my-16">
           <iframe
             className="w-full h-96 aspect-video"
             src={item.source}
