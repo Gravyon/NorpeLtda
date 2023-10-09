@@ -60,8 +60,8 @@ const Navbar = () => {
               to={item.href}
               className={({ isActive }) =>
                 isActive
-                  ? "text-norpe-green active-nav-link bg-white px-3 py-2 text-sm font-medium"
-                  : "text-norpe-green nav-link bg-white px-3 py-2 text-sm font-medium"
+                  ? "text-norpe-green active-nav-link bg-white px-3  text-sm font-medium"
+                  : "text-norpe-green nav-link bg-white px-3  text-sm font-medium"
               }
             >
               {item.name}
